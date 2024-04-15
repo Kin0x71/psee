@@ -1,0 +1,5 @@
+﻿  PngFile.c
+C:\dev\psee_rebuild_bullet\psee\lpng1637\contrib\visupng\PngFile.c(16,10): fatal error C1083: Не удается открыть файл включение: zlib.h: No such file or directory,
+  VisualPng.c
+C:\dev\psee_rebuild_bullet\psee\lpng1637\contrib\visupng\VisualPng.c(30,10): fatal error C1083: Не удается открыть файл включение: zlib.h: No such file or directory,
+  Создание кода...

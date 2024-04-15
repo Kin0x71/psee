@@ -1,0 +1,35 @@
+﻿  game.cpp
+H:\dev\2021\psee_rebuild_bullet\psee\engine\map\map.h(274,22): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "game.cpp")
+  
+H:\dev\2021\psee_rebuild_bullet\psee\engine\map\map.h(275,21): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "game.cpp")
+  
+H:\dev\2021\psee_rebuild_bullet\psee\engine\map\map_builder.h(19,23): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "game.cpp")
+  
+H:\dev\2021\psee_rebuild_bullet\psee\engine\map\map_builder.h(21,24): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "game.cpp")
+  
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(62,42): warning C4316: "cHouseObject": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(102,56): warning C4316: "cSkeletonObject": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(161,47): warning C4316: "cCollidedObject": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(212,47): warning C4316: "cCollidedObject": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(317,47): warning C4316: "cCharacter": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(491,33): warning C4316: "cUnit": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(569,49): warning C4316: "cSkeletonObject": объект, размещенный в куче, может не быть выровнен 16
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(808,22): warning C4018: <: несоответствие типов со знаком и без знака
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(810,23): warning C4018: <: несоответствие типов со знаком и без знака
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(923,21): warning C4018: <: несоответствие типов со знаком и без знака
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(925,22): warning C4018: <: несоответствие типов со знаком и без знака
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(950,57): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(950,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(1167,71): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+H:\dev\2021\psee_rebuild_bullet\psee\game.cpp(1167,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/LTCG"
+  Создание кода
+  1 of 5190 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    101 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  psee.vcxproj -> H:\dev\2021\psee_rebuild_bullet\psee\Release\psee.exe

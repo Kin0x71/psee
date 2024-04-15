@@ -1,0 +1,22 @@
+﻿  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  Assembler code may have bugs -- use at your own risk
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  infback.c
+  inffast.c
+  Assembler code may have bugs -- use at your own risk
+  inflate.c
+  inftrees.c
+  ioapi.c
+  trees.c
+  uncompr.c
+  unzip.c
+  zip.c
+  zutil.c
+  Создание кода...
+LINK : fatal error LNK1181: не удается открыть входной файл "..\..\masmx86\match686.obj"

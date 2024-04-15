@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll_debug_64|Win32">
+      <Configuration>dll_debug_64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll_debug_64|x64">
+      <Configuration>dll_debug_64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll_debug|Win32">
+      <Configuration>dll_debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll_debug|x64">
+      <Configuration>dll_debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{AC15CC9A-5323-4E25-AFE6-B2C52CC5E592}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>psee</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;glm;.;bullet\includes;lpng1637\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib;C:\dev\psee_rebuild_bullet\psee\lpng1637\libs\debug;C:\dev\psee_rebuild_bullet\psee\bullet\libs32\debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;glm;.;bullet;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;.;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;glm;.;D:\dev\2021\psee_rebuild_bullet\psee\bullet\includes;D:\dev\2021\psee_rebuild_bullet\psee\lpng1637\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib;C:\dev\psee_rebuild_bullet\psee\lpng1637\libs\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;glm;.;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;.;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;glm;.;bullet\includes;lpng1637\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib;lpng1637\libs\release;bullet\libs32\release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>oglincludes/include;glm;.;D:\dev\2021\psee_rebuild_bullet\psee\bullet\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>oglincludes/lib64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;opengl32.lib;glew32s.lib;freeglut.lib;Dbghelp.lib;libpng16.lib;zlib.lib;libbullet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;opengl32.lib;glew32s.lib;freeglut.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;opengl32.lib;glew32s.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;opengl32.lib;glew64s.lib;freeglut.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;opengl32.lib;glew64s.lib;freeglut.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll_debug_64|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;opengl32.lib;glew64s.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;comctl32.lib;opengl32.lib;glew32s.lib;freeglut.lib;Dbghelp.lib;libpng16.lib;zlib.lib;libbullet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;opengl32.lib;glew64s.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\bt_wrapper\bt_wrapper.cpp" />
+    <ClCompile Include="engine\camera.cpp" />
+    <ClCompile Include="engine\common\exception.cpp" />
+    <ClCompile Include="engine\common\screen.cpp" />
+    <ClCompile Include="engine\common\timer.cpp" />
+    <ClCompile Include="engine\common\xglobals.cpp" />
+    <ClCompile Include="engine\debug\bt_debug_drawer.cpp" />
+    <ClCompile Include="engine\debug\primitives.cpp" />
+    <ClCompile Include="engine\debug\sizeof_memory.cpp" />
+    <ClCompile Include="engine\engine.cpp" />
+    <ClCompile Include="engine\events\events.cpp" />
+    <ClCompile Include="engine\files\file.cpp" />
+    <ClCompile Include="engine\files\file_def_formats.cpp" />
+    <ClCompile Include="engine\files\font_file.cpp" />
+    <ClCompile Include="engine\files\mesh_file.cpp" />
+    <ClCompile Include="engine\globals.cpp" />
+    <ClCompile Include="engine\input\input.cpp" />
+    <ClCompile Include="engine\map\astar.cpp" />
+    <ClCompile Include="engine\map\map.cpp" />
+    <ClCompile Include="engine\map\map_builder.cpp" />
+    <ClCompile Include="engine\map\navigation.cpp" />
+    <ClCompile Include="engine\mesh\mesh.cpp" />
+    <ClCompile Include="engine\mesh\model.cpp" />
+    <ClCompile Include="engine\object\animation\animation.cpp" />
+    <ClCompile Include="engine\object\animation\skeleton_animation.cpp" />
+    <ClCompile Include="engine\object\objects.cpp" />
+    <ClCompile Include="engine\render\lights.cpp" />
+    <ClCompile Include="engine\render\renderer.cpp" />
+    <ClCompile Include="engine\scene\scene.cpp" />
+    <ClCompile Include="engine\shaders\compiler\parser.cpp" />
+    <ClCompile Include="engine\shaders\compiler\shader_compiler.cpp" />
+    <ClCompile Include="engine\shaders\compiler\shader_file.cpp" />
+    <ClCompile Include="engine\shaders\mesh_shader_controller.cpp" />
+    <ClCompile Include="engine\shaders\shaders.cpp" />
+    <ClCompile Include="engine\shaders\ShaderSemantics.cpp" />
+    <ClCompile Include="engine\textures\libpng.cpp" />
+    <ClCompile Include="engine\textures\texture.cpp" />
+    <ClCompile Include="engine\ui\text.cpp" />
+    <ClCompile Include="engine\ui\text_object.cpp" />
+    <ClCompile Include="engine\unit\character.cpp" />
+    <ClCompile Include="engine\unit\unit.cpp" />
+    <ClCompile Include="engine\unit\unit_base.cpp" />
+    <ClCompile Include="engine\unit\unit_bihavior.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="psee.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\bt_wrapper\bt_wrapper.h" />
+    <ClInclude Include="engine\camera.h" />
+    <ClInclude Include="engine\common\base_types.h" />
+    <ClInclude Include="engine\common\exception.h" />
+    <ClInclude Include="engine\common\gl_head.h" />
+    <ClInclude Include="engine\common\list.h" />
+    <ClInclude Include="engine\common\screen.h" />
+    <ClInclude Include="engine\common\stack.h" />
+    <ClInclude Include="engine\common\timer.h" />
+    <ClInclude Include="engine\common\xglobals.h" />
+    <ClInclude Include="engine\debug\bt_debug_drawer.h" />
+    <ClInclude Include="engine\debug\primitives.h" />
+    <ClInclude Include="engine\debug\sizeof_memory.hpp" />
+    <ClInclude Include="engine\defines.h" />
+    <ClInclude Include="engine\engine.h" />
+    <ClInclude Include="engine\events\events.h" />
+    <ClInclude Include="engine\events\tevents.h" />
+    <ClInclude Include="engine\files\file.h" />
+    <ClInclude Include="engine\files\file_def_formats.h" />
+    <ClInclude Include="engine\files\file_head.h" />
+    <ClInclude Include="engine\files\font_file.h" />
+    <ClInclude Include="engine\files\mesh_file.h" />
+    <ClInclude Include="engine\globals.h" />
+    <ClInclude Include="engine\input\input.h" />
+    <ClInclude Include="engine\input\input_keys.h" />
+    <ClInclude Include="engine\map\astar.h" />
+    <ClInclude Include="engine\map\map.h" />
+    <ClInclude Include="engine\map\map_builder.h" />
+    <ClInclude Include="engine\map\navigation.h" />
+    <ClInclude Include="engine\mesh\mesh.h" />
+    <ClInclude Include="engine\mesh\mesh_defines.h" />
+    <ClInclude Include="engine\mesh\model.h" />
+    <ClInclude Include="engine\object\animation\animation.h" />
+    <ClInclude Include="engine\object\animation\skeleton_animation.h" />
+    <ClInclude Include="engine\object\objects.h" />
+    <ClInclude Include="engine\render\lights.h" />
+    <ClInclude Include="engine\render\renderer.h" />
+    <ClInclude Include="engine\scene\scene.h" />
+    <ClInclude Include="engine\shaders\compiler\parser.h" />
+    <ClInclude Include="engine\shaders\compiler\shader_compiler.h" />
+    <ClInclude Include="engine\shaders\compiler\shader_file.h" />
+    <ClInclude Include="engine\shaders\mesh_shader_controller.h" />
+    <ClInclude Include="engine\shaders\shaders.h" />
+    <ClInclude Include="engine\shaders\ShaderSemantics.h" />
+    <ClInclude Include="engine\textures\libpng.h" />
+    <ClInclude Include="engine\textures\texture.h" />
+    <ClInclude Include="engine\ui\text.h" />
+    <ClInclude Include="engine\ui\text_object.h" />
+    <ClInclude Include="engine\unit\character.h" />
+    <ClInclude Include="engine\unit\unit.h" />
+    <ClInclude Include="engine\unit\unit_base.h" />
+    <ClInclude Include="engine\unit\unit_bihavior.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="psee.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

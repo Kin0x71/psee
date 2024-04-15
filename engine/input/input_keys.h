@@ -1,0 +1,279 @@
+#ifndef _INPUT_KEYS_H_
+#define _INPUT_KEYS_H_
+
+#include <engine/defines.h>
+
+#ifdef WINDOWS_SPACE
+enum _KEY_KODE_
+{
+_KEY_NON=-1,
+_KEY_ESC,//27
+_KEY_TAB,//9
+_KEY_BACK,//8
+_KEY_ENTER,//13
+_KEY_SHIFTL,//16
+_KEY_SHIFTR,//16
+_KEY_CTRLL,//17
+_KEY_CTRLR,//17
+_KEY_ALTR,//17
+_KEY_ALTL,//17
+_KEY_PAUSE,//19
+_KEY_CAPS,//20
+_KEY_INSERT,//45
+_KEY_DELETE,//46
+_KEY_SPACE,//32
+_KEY_PGUP,//33
+_KEY_PGDN,//34
+_KEY_END,//35
+_KEY_HOME,//36
+_KEY_LEFT,//37
+_KEY_UP,//38
+_KEY_RIGHT,//39
+_KEY_DOWN,//40
+_KEY_WIN,//91
+_KEY_MENU,//93
+_KEY_0=25,//48
+_KEY_1,//49
+_KEY_2,//50
+_KEY_3,//51
+_KEY_4,//52
+_KEY_5,//53
+_KEY_6,//54
+_KEY_7,//55
+_KEY_8,//56
+_KEY_9,//57
+_KEY_A=35,//65
+_KEY_B,
+_KEY_C,
+_KEY_D,
+_KEY_E,
+_KEY_F,
+_KEY_G,
+_KEY_H,
+_KEY_I,
+_KEY_J,
+_KEY_K,
+_KEY_L,
+_KEY_M,
+_KEY_N,
+_KEY_O,
+_KEY_P,
+_KEY_Q,
+_KEY_R,
+_KEY_S,
+_KEY_T,
+_KEY_U,
+_KEY_V,
+_KEY_W,
+_KEY_X,
+_KEY_Y,
+_KEY_Z,//90
+_KEY_F1=61,//112
+_KEY_F2,
+_KEY_F3,
+_KEY_F4,
+_KEY_F5,
+_KEY_F6,
+_KEY_F7,
+_KEY_F8,
+_KEY_F9,
+_KEY_F10,
+_KEY_F11,
+_KEY_F12,//123
+_KEY_SC1=73,//186 ;
+_KEY_SC2,//187 =
+_KEY_SC3,//188 <
+_KEY_SC4,//189 -
+_KEY_SC5,//190 >
+_KEY_SC6,//191 /
+_KEY_SC7,//192 ~
+_KEY_SC8=81,//219 [
+_KEY_SC9,//220 \|
+_KEY_SC10,//221 ]
+_KEY_SC11,//222 '
+_KEY_MAX=94
+};
+#elif defined(LINUX_DESCTOP_SPACE)
+enum _KEY_KODE_
+{
+_KEY_NON=-1,
+_KEY_ESC,// 9
+_KEY_1,
+_KEY_2,
+_KEY_3,
+_KEY_4,
+_KEY_5,
+_KEY_6,
+_KEY_7,
+_KEY_8,
+_KEY_9,
+_KEY_0,
+_KEY_SC4,//20 -
+_KEY_SC2,//21 =
+_KEY_BACK,
+_KEY_TAB,
+_KEY_Q,
+_KEY_W,
+_KEY_E,
+_KEY_R,
+_KEY_T,
+_KEY_Y,
+_KEY_U,
+_KEY_I,
+_KEY_O,
+_KEY_P,
+_KEY_SC8,//[
+_KEY_SC10,//]
+_KEY_ENTER,
+_KEY_CTRLL,
+_KEY_A,
+_KEY_S,
+_KEY_D,
+_KEY_F,
+_KEY_G,
+_KEY_H,
+_KEY_J,
+_KEY_K,
+_KEY_L,
+_KEY_SC1,//47 ;
+_KEY_SC11,// '
+_KEY_SC7,// ~
+_KEY_SHIFTL,
+_KEY_SC9,// \|
+_KEY_Z,
+_KEY_X,
+_KEY_C,
+_KEY_V,
+_KEY_B,
+_KEY_N,
+_KEY_M,
+_KEY_SC3,// <
+_KEY_SC5,// >
+_KEY_SC6,// /
+_KEY_SHIFTR,
+_KEY_NOP,
+_KEY_ALTL,
+_KEY_SPACE,
+_KEY_CAPS,
+_KEY_F1,
+_KEY_F2,
+_KEY_F3,
+_KEY_F4,
+_KEY_F5,
+_KEY_F6,
+_KEY_F7,
+_KEY_F8,
+_KEY_F9,
+_KEY_F10,//76
+_KEY_F11,//95
+_KEY_F12,//96
+_KEY_CTRLR,//105
+_KEY_ALTR,//108
+_KEY_HOME,//110
+_KEY_UP,
+_KEY_PGUP,
+_KEY_LEFT,
+_KEY_RIGHT,
+_KEY_END,
+_KEY_DOWN,
+_KEY_PGDN,
+_KEY_INSERT,
+_KEY_DELETE,//119
+_KEY_PAUSE,//127
+_KEY_WIN,//133
+_KEY_MENU,//135
+_KEY_MAX=85
+};
+#elif defined(ANDROID_SPACE)
+enum _KEY_KODE_
+{
+_KEY_ESC,// 9
+_KEY_1,
+_KEY_2,
+_KEY_3,
+_KEY_4,
+_KEY_5,
+_KEY_6,
+_KEY_7,
+_KEY_8,
+_KEY_9,
+_KEY_0,
+_KEY_SC4,//20 -
+_KEY_SC2,//21 =
+_KEY_BACK,
+_KEY_TAB,
+_KEY_Q,
+_KEY_W,
+_KEY_E,
+_KEY_R,
+_KEY_T,
+_KEY_Y,
+_KEY_U,
+_KEY_I,
+_KEY_O,
+_KEY_P,
+_KEY_SC8,//[
+_KEY_SC10,//]
+_KEY_ENTER,
+_KEY_CTRLL,
+_KEY_A,
+_KEY_S,
+_KEY_D,
+_KEY_F,
+_KEY_G,
+_KEY_H,
+_KEY_J,
+_KEY_K,
+_KEY_L,
+_KEY_SC1,//47 ;
+_KEY_SC11,// '
+_KEY_SC7,// ~
+_KEY_SHIFTL,
+_KEY_SC9,// \|
+_KEY_Z,
+_KEY_X,
+_KEY_C,
+_KEY_V,
+_KEY_B,
+_KEY_N,
+_KEY_M,
+_KEY_SC3,// <
+_KEY_SC5,// >
+_KEY_SC6,// /
+_KEY_SHIFTR,
+_KEY_NOP,
+_KEY_ALTL,
+_KEY_SPACE,
+_KEY_CAPS,
+_KEY_F1,
+_KEY_F2,
+_KEY_F3,
+_KEY_F4,
+_KEY_F5,
+_KEY_F6,
+_KEY_F7,
+_KEY_F8,
+_KEY_F9,
+_KEY_F10,//76
+_KEY_F11,//95
+_KEY_F12,//96
+_KEY_CTRLR,//105
+_KEY_ALTR,//108
+_KEY_HOME,//110
+_KEY_UP,
+_KEY_PGUP,
+_KEY_LEFT,
+_KEY_RIGHT,
+_KEY_END,
+_KEY_DOWN,
+_KEY_PGDN,
+_KEY_INSERT,
+_KEY_DELETE,//119
+_KEY_PAUSE,//127
+_KEY_WIN,//133
+_KEY_MENU,//135
+_KEY_MAX=85
+};
+#endif
+
+#endif

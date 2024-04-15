@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VisualPng", "VisualPng.vcxproj", "{3970081D-5425-4B9C-A806-50A4D2E9708E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3970081D-5425-4B9C-A806-50A4D2E9708E}.Debug|x86.ActiveCfg = Debug|Win32
+		{3970081D-5425-4B9C-A806-50A4D2E9708E}.Debug|x86.Build.0 = Debug|Win32
+		{3970081D-5425-4B9C-A806-50A4D2E9708E}.Release|x86.ActiveCfg = Release|Win32
+		{3970081D-5425-4B9C-A806-50A4D2E9708E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA9898CD-5733-497C-98E9-5DC3059A7F95}
+	EndGlobalSection
+EndGlobal

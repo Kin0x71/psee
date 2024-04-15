@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{ed32f2cb-fb72-4cdb-9cfc-40ffdff34230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\scene">
+      <UniqueIdentifier>{e777ab86-d4d5-4608-83d2-d4357fd478e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\render">
+      <UniqueIdentifier>{9f7a7e3c-138a-419e-9b15-3b3927bb4a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\mesh">
+      <UniqueIdentifier>{4648f2ac-d198-49e3-bd02-1936533af36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\object">
+      <UniqueIdentifier>{99026570-6d78-4c81-9ac0-9bb486ae3efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\shaders">
+      <UniqueIdentifier>{fa36cbff-154f-45c3-8f43-0dfdb51adc9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\textures">
+      <UniqueIdentifier>{ce7c73d0-bd0e-4dab-8d9f-19c3464ff880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\shaders\compiler">
+      <UniqueIdentifier>{212dd3aa-8d4b-42eb-b37a-0b1c30ccf701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\files">
+      <UniqueIdentifier>{68dcf2b6-9f77-4ae2-b109-a45f63e7759b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\common">
+      <UniqueIdentifier>{cfb84754-7dab-4597-bf7c-e274cd6c72d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\object\animation">
+      <UniqueIdentifier>{2ca8d367-6c31-467c-b6e0-1be50285d5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\debug">
+      <UniqueIdentifier>{18ccbb39-908b-4967-a4be-5553ed236543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\bt_wrapper">
+      <UniqueIdentifier>{9d5ad665-5981-4b7d-be99-22566cf04704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\ui">
+      <UniqueIdentifier>{1a8f2cec-9dee-4106-95a3-b800e1d35081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\input">
+      <UniqueIdentifier>{1e5bb5d4-a4d3-4ce1-910b-71da500d7066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\events">
+      <UniqueIdentifier>{171f8081-4fad-403f-b81f-9310df17f7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\unit">
+      <UniqueIdentifier>{123e8e93-70e9-4f7a-a616-d1fc2bad9222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\map">
+      <UniqueIdentifier>{f39701cf-6aa4-4a98-80d5-e90adce881f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="psee.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\engine.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\scene\scene.cpp">
+      <Filter>engine\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\render\renderer.cpp">
+      <Filter>engine\render</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\mesh\mesh.cpp">
+      <Filter>engine\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\camera.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shaders\ShaderSemantics.cpp">
+      <Filter>engine\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\textures\texture.cpp">
+      <Filter>engine\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shaders\compiler\shader_compiler.cpp">
+      <Filter>engine\shaders\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shaders\compiler\shader_file.cpp">
+      <Filter>engine\shaders\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shaders\compiler\parser.cpp">
+      <Filter>engine\shaders\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\files\file.cpp">
+      <Filter>engine\files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\files\mesh_file.cpp">
+      <Filter>engine\files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\mesh\model.cpp">
+      <Filter>engine\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shaders\mesh_shader_controller.cpp">
+      <Filter>engine\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\shaders\shaders.cpp">
+      <Filter>engine\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\common\exception.cpp">
+      <Filter>engine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\common\screen.cpp">
+      <Filter>engine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\common\xglobals.cpp">
+      <Filter>engine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\globals.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\object\animation\skeleton_animation.cpp">
+      <Filter>engine\object\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\object\animation\animation.cpp">
+      <Filter>engine\object\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\common\timer.cpp">
+      <Filter>engine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\files\file_def_formats.cpp">
+      <Filter>engine\files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\debug\primitives.cpp">
+      <Filter>engine\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\object\objects.cpp">
+      <Filter>engine\object</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\debug\bt_debug_drawer.cpp">
+      <Filter>engine\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\bt_wrapper\bt_wrapper.cpp">
+      <Filter>engine\bt_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\debug\sizeof_memory.cpp">
+      <Filter>engine\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\textures\libpng.cpp">
+      <Filter>engine\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\render\lights.cpp">
+      <Filter>engine\render</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\input.cpp">
+      <Filter>engine\input</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\events\events.cpp">
+      <Filter>engine\events</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\text.cpp">
+      <Filter>engine\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\text_object.cpp">
+      <Filter>engine\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\files\font_file.cpp">
+      <Filter>engine\files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\unit\unit.cpp">
+      <Filter>engine\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\unit\character.cpp">
+      <Filter>engine\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\unit\unit_bihavior.cpp">
+      <Filter>engine\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\map\astar.cpp">
+      <Filter>engine\map</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\map\map.cpp">
+      <Filter>engine\map</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\map\navigation.cpp">
+      <Filter>engine\map</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\unit\unit_base.cpp">
+      <Filter>engine\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\map\map_builder.cpp">
+      <Filter>engine\map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\engine.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\scene\scene.h">
+      <Filter>engine\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\render\renderer.h">
+      <Filter>engine\render</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\mesh\mesh.h">
+      <Filter>engine\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\camera.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shaders\ShaderSemantics.h">
+      <Filter>engine\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\textures\texture.h">
+      <Filter>engine\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shaders\compiler\parser.h">
+      <Filter>engine\shaders\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shaders\compiler\shader_compiler.h">
+      <Filter>engine\shaders\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shaders\compiler\shader_file.h">
+      <Filter>engine\shaders\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\files\file.h">
+      <Filter>engine\files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\files\mesh_file.h">
+      <Filter>engine\files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\mesh\model.h">
+      <Filter>engine\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shaders\mesh_shader_controller.h">
+      <Filter>engine\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\shaders\shaders.h">
+      <Filter>engine\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\base_types.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\exception.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\gl_head.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\screen.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\xglobals.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\globals.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\mesh\mesh_defines.h">
+      <Filter>engine\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\object\animation\skeleton_animation.h">
+      <Filter>engine\object\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\object\animation\animation.h">
+      <Filter>engine\object\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\timer.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\files\file_def_formats.h">
+      <Filter>engine\files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\debug\primitives.h">
+      <Filter>engine\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\files\file_head.h">
+      <Filter>engine\files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\object\objects.h">
+      <Filter>engine\object</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\debug\bt_debug_drawer.h">
+      <Filter>engine\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\bt_wrapper\bt_wrapper.h">
+      <Filter>engine\bt_wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\textures\libpng.h">
+      <Filter>engine\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\render\lights.h">
+      <Filter>engine\render</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\debug\sizeof_memory.hpp">
+      <Filter>engine\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\list.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\input.h">
+      <Filter>engine\input</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\input_keys.h">
+      <Filter>engine\input</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\events\tevents.h">
+      <Filter>engine\events</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\events\events.h">
+      <Filter>engine\events</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\text.h">
+      <Filter>engine\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\text_object.h">
+      <Filter>engine\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\files\font_file.h">
+      <Filter>engine\files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common\stack.h">
+      <Filter>engine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\unit\unit.h">
+      <Filter>engine\unit</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\unit\character.h">
+      <Filter>engine\unit</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\unit\unit_bihavior.h">
+      <Filter>engine\unit</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\unit\unit_base.h">
+      <Filter>engine\unit</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\map\astar.h">
+      <Filter>engine\map</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\map\map.h">
+      <Filter>engine\map</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\map\navigation.h">
+      <Filter>engine\map</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="engine\defines.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\map\map_builder.h">
+      <Filter>engine\map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="psee.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
