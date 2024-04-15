@@ -1,4 +1,5 @@
-# psee
+# PSEE "Paranoya soft experimental engine"
+
 WASD - управление, shift - бег, space - прыжок, колесо мыши - дистпнция камеры.
 
 Вход в таверну находится высоко, заходить прыжком.
